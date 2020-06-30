@@ -7,4 +7,7 @@ const smallestDivisor = (num) => {
     };
     return iter(2, num);
   };
+
   smallestDivisor(9);
+
+  export default smallestDivisor;
