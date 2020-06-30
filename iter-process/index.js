@@ -1,13 +1,15 @@
 const smallestDivisor = (num) => {
-    const iter = (counter, acc) => {
-      if (acc % counter >= 1) {
-        return acc;
-      }
-      return acc / iter(counter + 1, acc / counter);
-    };
-    return iter(2, num);
+
+  const iter = (counter, acc) => {
+    if (acc % counter === 0 ) {
+      return counter;
+    }
+    
+    return iter(counter + 1, acc);  
   };
 
-  smallestDivisor(9);
+  return iter(2, num);
 
-  export default smallestDivisor;
+};
+
+console.log(smallestDivisor(17));
