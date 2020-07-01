@@ -14,4 +14,4 @@ const smallestDivisor = (num) => {
 
 };
 
-console.log(smallestDivisor(15));
+console.log(smallestDivisor(15477));
