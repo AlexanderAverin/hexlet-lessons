@@ -1,8 +1,13 @@
 const smallestDivisor = (num) => {
+    if (num === 1) {
+        return 1;
+    }
+    if (num < 1) {
+      return NaN;
+    }
     let counter = 2;
-    let acc = num;
-    while (acc % counter === 0) {
+    while (num % counter >= 1 ) {
         counter = counter + 1;
     }
+    return counter;
 };
- return counter;
