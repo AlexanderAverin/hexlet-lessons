@@ -8,4 +8,3 @@ const reverse = (str) => {
     }
     return result;
 };
-console.log(reverse("Hello"))
