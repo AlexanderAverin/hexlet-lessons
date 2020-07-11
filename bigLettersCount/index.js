@@ -9,4 +9,15 @@ const func = (str) => {
    }
        return result;
 };
-console.log(func("Hello"));
+const compare = (first, second) => {
+const firstCount = func(first);
+const secondCount = func(second);
+if (first > second) {
+    return 1;
+  } else if (second > first) {
+    return -1;
+  } else {
+    return 0;
+  }
+};
+console.log(compare('AD', 'ad sd'));
