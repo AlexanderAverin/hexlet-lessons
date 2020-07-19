@@ -1,17 +1,15 @@
 const addDigits = (num) => {
-    let n = String(num);
-    let i = n.length;
+    let str = String(num);
     let result = null;
-    let acc = null;
-    while (i > 0) {
-        i -= 1;
-        acc = n[i];
-        result += Number(acc);
-    }
-    const counter = (result) => {
+    let i = str.length;
         while (i > 0) {
-            
+            i -= 1;
+            result += Number(str[i]);
+        } 
+        if (result > 9) {
+            return addDigits(result); 
+        } else {
+            return result;
         }
-    }
-};
+    };
 console.log(addDigits(38));
