@@ -1,11 +1,9 @@
 const solution = (str) => {
-    let i = 0;
-    let result = "";
+    let i = 1;
+    let result = str[0].toUpperCase();
     while (i < str.length) {
         if (str[i - 1] == " " && str[i] !== " ") {
             result += str[i].toUpperCase();
-        } else if (str[i] == str[0]) {
-            result += str[0].toUpperCase();
         } else {
             result += str[i];
         }
@@ -13,4 +11,4 @@ const solution = (str) => {
     }
     return result;
 };
-console.log(solution(' many different words inside sentence'))
+console.log(solution("hello    how     are         you"));
