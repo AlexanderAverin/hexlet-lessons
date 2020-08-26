@@ -17,8 +17,4 @@ const buildDefinitionList = (arr) => {
     }
     return html.join("");
 };
-const definitions1 = [
-    ['key', 'value'],
-    ['key2', 'value2'],
-  ];
-console.log(buildDefinitionList(definitions1));
+console.log(buildDefinitionList());
