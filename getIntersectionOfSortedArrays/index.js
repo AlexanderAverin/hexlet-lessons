@@ -25,4 +25,4 @@ const getIntersectionOfSortedArrays = (arr, arr2) => {
   }
   return result;
 };
-console.log(getIntersectionOfSortedArrays([1, 2, 3], [2, 3, 4, 6]));n
+console.log(getIntersectionOfSortedArrays([1, 2, 3], [2, 3, 4, 6]));
