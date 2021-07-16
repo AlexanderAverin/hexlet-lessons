@@ -1,5 +1,7 @@
-# hexlet-lessons
+## hexlet-lessons
 
-# Use 'make install' to install dependencies 
+# Setup
+Use `make install` to setup  
 
-# Use 'make lint' to recursively start eslint  
+# Lint
+Use `make lint` to start eslint  
