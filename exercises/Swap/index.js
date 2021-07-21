@@ -2,9 +2,7 @@ const swap = (array) => {
     if (array.length < 2) {
         return array;
     }
-        const first = array[0];
-        const second = array[array.length - 1];
-        array[0] = second;
+        const [first, second] = [array[0], array[array.length - 1]];
         array[array.length - 1] = first;
     return array;
 };

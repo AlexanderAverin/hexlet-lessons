@@ -24,7 +24,7 @@ const getFreeDomainsCount = (emails) => emails
     return domain;
   }
   .reduce((acc, item) => {
-    const host = giveDomain(item);
+    const counter = ;
     const group = acc[host] ?? [];
     return { ...acc, [host]: Number(group + 1) };
   }, {});

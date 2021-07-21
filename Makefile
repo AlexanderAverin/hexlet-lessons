@@ -1,5 +1,8 @@
-make lint:
+lint:
 	npx eslint .
 
-make install: 
+install: 
+	npm install
+
+ci: 
 	npm ci

@@ -11,4 +11,4 @@ const reverse = (arr) => {
     }
     return arr;
 };
-console.log(reverse(['john', 'smith', 'karl']));
+console.log(reverse(['john', 'smith', 'karl', 'b', 'a']));
