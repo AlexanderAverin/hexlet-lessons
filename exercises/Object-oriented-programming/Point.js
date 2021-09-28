@@ -31,7 +31,7 @@ function Segment(beginPoint, endPoint) {
 const reverse = (segment) => {
   const reverseSegment = new Segment(
     segment.getEndPoint(),
-    segment.getBeginPoint()
+    segment.getBeginPoint(),
   );
   return reverseSegment;
 };

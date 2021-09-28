@@ -10,8 +10,7 @@
 //   return iter(0);
 // };
 
-const each = (collection, callback) =>
-  collection.forEach((obj) => callback.call(obj));
+const each = (collection, callback) => collection.forEach((obj) => callback.call(obj));
 
 const objects = [{ name: 'Karl' }, { name: 'Mia' }];
 
