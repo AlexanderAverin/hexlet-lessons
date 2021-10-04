@@ -6,3 +6,6 @@ install:
 
 ci: 
 	npm ci
+
+formater-dir:
+	npx prettier --write .
