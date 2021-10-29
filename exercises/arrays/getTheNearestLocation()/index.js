@@ -5,16 +5,21 @@ const getDistance = ([x1, y1], [x2, y2]) => {
   return Math.sqrt(xs ** 2 + ys ** 2);
 };
 
-const locations = [
-  ['Park', [10, 5]],
-  ['Sea', [1, 3]],
-  ['Museum', [8, 4]],
-];
-
-const currentPoint = [5, 5];
-
-const getTheNearestLocation = (places, point) => {
-  
+const getDistanceArr = (locations, currentPoint) => {
+  const iter = (acc, counter) => {
+    if (counter === locations.length) {
+      return acc;
+    }
+    const [, point] = locations[counter];
+    return iter([...acc, getDistance(currentPoint, point)], counter += 1);
+  };
+  return iter([], 0);
 };
 
-console.log(getTheNearestLocation(locations, currentPoint));
+const getTheNearestLocation = (locations, point) => {
+  if (locations.length === 0) {
+    return null;
+  }
+  const distanceArray = getDistanceArr(locations, point);
+  return locations[distanceArray.indexOf(Math.min(...distanceArray))];
+};
