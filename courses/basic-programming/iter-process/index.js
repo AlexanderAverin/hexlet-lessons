@@ -1,5 +1,5 @@
 const smallestDivisor = (num) => {
-  
+
   const iter = (counter, acc) => {
     if (num === 1) {
       return 1;
@@ -11,7 +11,7 @@ const smallestDivisor = (num) => {
   };
 
   return iter(2, num);
-  
+
 };
 
 console.log(smallestDivisor(15477));
