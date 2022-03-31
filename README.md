@@ -6,4 +6,6 @@ $ npm install
 ```
 
 # Linting
-Use ```bash make lint``` to run eslint global
+Use ```bash
+ make lint
+ ``` to run eslint global
