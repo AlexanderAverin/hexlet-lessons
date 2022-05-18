@@ -1,11 +1,11 @@
 # hexlet-lessons
 
-# Setup
+## Setup
 ```bash
 $ npm install
 ```
 
-# Linting
+### Linting
 Use 
 ```bash
 $ make lint
