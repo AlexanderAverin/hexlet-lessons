@@ -12,19 +12,19 @@
     "type": "git",
     "url": "git+https://github.com/AlexanderAverin/hexlet-lessons.git"
   },
-  "author": "",
+  "author": "Alexander Averin",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AlexanderAverin/hexlet-lessons/issues"
   },
   "homepage": "https://github.com/AlexanderAverin/hexlet-lessons#readme",
   "devDependencies": {
-    "eslint": "^8.11.0",
+    "eslint": "^8.15.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jest": "^26.1.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.2.2",
     "jest": "^27.5.1",
-    "nodemon": "^2.0.15",
+    "nodemon": "^2.0.16",
     "prettier": "^2.4.1"
   },
   "dependencies": {
