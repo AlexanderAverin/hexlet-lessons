@@ -2,13 +2,13 @@
 plugins:
 - jest
 env:
-  node: true
   es2021: true
+  node: true
 extends:
-- airbnb-base
-- plugin:jest/recommended
+  - standard
+  - plugin:jest/recommended
 parserOptions:
-  ecmaVersion: 13
+  ecmaVersion: latest
   sourceType: module
 rules:
   no-console: 0
